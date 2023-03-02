@@ -1,0 +1,117 @@
+.project-page {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px -10px;
+
+    &__inner {
+        width: calc(100% - 20px);
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 50px;
+        border-radius: 8px;
+        background-color: var(--basic);
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+
+        &--center {
+            justify-content: center;
+        }
+
+        &>a+a {
+            margin-left: 20px;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        color: var(--white);
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        background-color: var(--accent);
+    }
+
+    &__date {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--d-gray);
+        margin-left: auto;
+    }
+
+    &__content {
+        margin-top: 50px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+}
+
+.presentation {
+    &__header {
+        position: relative;
+        padding: 10px 20px 10px;
+        border-radius: 8px 8px 0 0;
+        border-top: 1px solid var(--d-gray);
+        border-right: 1px solid var(--d-gray);
+        border-left: 1px solid var(--d-gray);
+
+        &>span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            border: 1px solid var(--d-gray);
+            margin-right: 10px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        border: 1px solid var(--d-gray);
+        border-radius: 0 0 8px 8px;
+        margin-bottom: 30px;
+        overflow: hidden;
+
+        &>img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .portfolio__btn {
+        height: 66px;
+        width: 66px;
+    }
+
+    .portfolio-page {
+        &__row {
+            align-items: start;
+            flex-direction: column-reverse;
+
+            &>a+a {
+                margin-left: 0;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__data {
+            margin-left: 0;
+        }
+    }
+}
