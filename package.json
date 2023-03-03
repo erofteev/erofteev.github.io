@@ -1,7 +1,7 @@
 {
   "name": "Erofteev Personal page",
   "private": true,
-  "homepage": "https://github.com/erofteev/erofteev.github.io",
+  "homepage": "https://erofteev.github.io/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
