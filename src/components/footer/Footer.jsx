@@ -18,9 +18,9 @@ const Footer = () => {
                         <div className="btn__box">
                             <a href="mailto:g.erofteev@gmail.com" className="btn">Обсудить проект</a>
                             <div className="btn__social">
-                                <a href="/"><img src={gh} alt="Github" /></a>
-                                <a href="/"><img src={tg} alt="Telegram" /></a>
-                                <a href="/"><img src={vk} alt="VK" /></a>
+                                <a href="https://github.com/erofteev"><img src={gh} alt="Github" /></a>
+                                <a href="tg://resolve?domain=erofteev"><img src={tg} alt="Telegram" /></a>
+                                <a href="https://vk.com/g.erofteev"><img src={vk} alt="VK" /></a>
                             </div>
                         </div>
                         <div className="footer__copyright">Дизайн и разработка - Глеб Ерофтеев</div>

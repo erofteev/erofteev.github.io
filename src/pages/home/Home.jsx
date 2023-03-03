@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 
+import ProjectCards from "./projectCards";
+import { projects } from "./../../data/projectsList";
+
 import photo from "./../../assets/img/me.jpg"
 import gh from "./../../assets/img/icons/gh.svg"
 import tg from "./../../assets/img/icons/tg.svg"
@@ -61,9 +64,9 @@ const Home = () => {
                             <div className="btn__box">
                                 <a href="mailto:g.erofteev@gmail.com" className="btn">Обсудить проект</a>
                                 <div className="btn__social">
-                                    <a href="/"><img src={gh} alt="Github" /></a>
-                                    <a href="/"><img src={tg} alt="Telegram" /></a>
-                                    <a href="/"><img src={vk} alt="VK" /></a>
+                                    <a href="https://github.com/erofteev"><img src={gh} alt="Github" /></a>
+                                    <a href="tg://resolve?domain=erofteev"><img src={tg} alt="Telegram" /></a>
+                                    <a href="https://vk.com/g.erofteev"><img src={vk} alt="VK" /></a>
                                 </div>
                             </div>
                         </div>
@@ -122,6 +125,20 @@ const Home = () => {
                         <li>Photoshop</li>
                         <li>Illustrator</li>
                     </ul>
+                </div>
+            </div>
+            <div className="section">
+                <div className="portfolio" id="portfolio">
+                    {projects.map((project) => {
+                        return <ProjectCards
+                            key={project.id}
+                            name={project.name}
+                            title={project.title}
+                            subtitle={project.subtitle}
+                            img={project.img}
+                            link={project.link}
+                        />;
+                    })}
                 </div>
             </div>
         </main>

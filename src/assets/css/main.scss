@@ -271,7 +271,7 @@ body {
         flex-direction: column;
         width: calc(50% - 20px);
         margin: 10px 10px;
-        border-radius: 8px;
+        border-radius: 6px;
         overflow: hidden;
     }
 
@@ -310,6 +310,7 @@ body {
         background-size: cover;
         background-repeat: none;
         background-position: top center;
+        border-radius: 8px;
         transition: all 3s ease;
     }
 }
